@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=/tools/">
+  <title>工具铺 · 跳转中…</title>
+  <script>
+    // 主跳转（兼容各浏览器）
+    window.location.replace('/tools/');
+  </script>
+  <style>
+    body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b); color: #e2e8f0; }
+    .box { text-align: center; }
+    a { color: #38bdf8; text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .spin { width: 28px; height: 28px; border: 3px solid #334155; border-top-color: #38bdf8;
+      border-radius: 50%; animation: r 0.8s linear infinite; margin: 0 auto 14px; }
+    @keyframes r { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="spin"></div>
+    <p>正在跳转到 <strong>工具铺</strong> …</p>
+    <p>若未自动跳转，请 <a href="/tools/">点击这里</a>。</p>
+  </div>
+</body>
+</html>
